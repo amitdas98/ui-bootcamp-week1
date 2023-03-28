@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+    background: whitesmoke;
+}
+.wrapper {
+    background: whitesmoke;
+    max-width: max-content;
+    margin: 135px auto;
+    border-radius: 7px;
+}
+.taskInput{
+    height: 50px;
+    padding: 0 23px;
+}
+.taskInput input{
+    height: 100%;
+    width: 100%;
+    padding: 0 20px 0 53px;
+
+}
+.controls, li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 25px;
+}
+.filters span {
+    margin: 0 8px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.filters span.active{
+    color: rgb(12, 212, 18);
+    border-bottom: 1px solid black;
+}
+.filters span:first-child {
+    margin-left: 0 ;
+}
+.allTasks {
+    margin: 20px 25px auto;
+
+}
+.allTasks .task {
+    list-style: none;
+    font-size: 17px;
+    margin-bottom: 17px;
+    border-bottom: #3c87ff solid;
+    padding-bottom: 15px;
+    text-align: justify;
+}
+.allTasks .task:last-child{ 
+    margin-bottom: 0;
+    border-bottom: 0;
+    padding-bottom: 13px;
+}
+.task label {
+    display: flex;
+}
+.allTasks label input {
+    margin-top: 1px;
+    margin-right: 12px;
+}
+.allTasks .settings {
+    cursor: pointer;
+}
+
+.todoHash {
+    margin: 70px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.allTasks .task p.checked{
+    text-decoration: line-through;
+}
+
+.clear-btn {
+    font-size: 17px;
+    padding: 3px;
+}
